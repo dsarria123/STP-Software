@@ -1,0 +1,12 @@
+! WolfScheduler
+# test1,Equivalence Class
+* description
+with multiple lines
+* expected results
+with multiple lines
+- actual results
+- FAIL: actual results on
+multiple lines
+- PASS: actual results  
+on three
+lines 

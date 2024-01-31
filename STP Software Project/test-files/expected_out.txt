@@ -1,0 +1,16 @@
+! TestPlan1
+# ID 0,type 0
+* description 0
+* expected results 0
+- FAIL: actual results 0-1
+# ID 1,type 1
+* description 1
+* expected results 1
+- PASS: actual results 1-1
+- FAIL: actual results 1-2
+# ID 2,type 2
+* description 2
+* expected results 2
+- PASS: actual results 2-1
+- PASS: actual results 2-2
+! TestPlan2

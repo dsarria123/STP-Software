@@ -1,0 +1,62 @@
+! WolfScheduler
+# Invalid File,Equivalence Class
+* 1. Run WolfScheduler GUI
+2. In the Load Course Catalog File Chooser dialog select: testfiles/invalid_course_records.txt
+3. Click Select
+4. Check Results
+5. Close GUI
+* WolfSchedulerGUI loads
+Course Catalog is empty
+My Schedule is empty
+Course Details only shows labels
+- PASS: everything is empty
+- FAIL: courses are listed
+- PASS: everything is empty
+# Valid File,Requirements
+* 1. Run WolfScheduler GUI
+2. In the Load Course Catalog File Chooser dialog select: testfiles/_course_records.txt
+3. Click Select
+4. Check Results
+5. Close GUI
+* Course catalog contains 13 courses
+# Add No Selection,Invalid
+* Precondition: Valid File test has passed
+1. Make sure that no row in the Course Catalog table is selected
+2. Click Add Course
+3. Check results
+4. Click OK
+5. Close GUI 
+* A pop up dialog stating "No course is selected in the catalog." is displayed.
+- FAIL: no pop up displays
+! PackScheduler
+# T24 Add new course,Requirements
+* Preconditions: PackSchedulerGUI has loaded and registrar user is logged in (T2). T23 has run
+1. Enter the following course information:
+Course Name: CSC 236
+Course Title: Computer Organization and Assembly Language
+Course Section: 001
+Credits: 3
+Instructor Id: lasher
+Start Time: 10:15AM
+End Time: 11:30AM
+Meeting Days: Tuesday & Thursday
+Click Add Course
+Click OK
+* Course is added to the list in the appropriate location
+- PASS: course added (Lab 5)
+- FAIL: course not added b/c of invalid course name (Lab 6)
+# Invalid course name,Invalid
+* Preconditions: PackSchedulerGUI has loaded and registrar user is logged in (T2). T23 has run
+1. Enter the following course information:
+Course Name: CSC236
+Course Title: Computer Organization and Assembly Language
+Course Section: 001
+Credits: 3
+Instructor Id: lasher
+Start Time: 10:15AM
+End Time: 11:30AM
+Meeting Days: Tuesday & Thursday
+Click Add Course
+Click OK
+* Error message: Invalid course name
+- PASS: correct error message (Lab 5)
